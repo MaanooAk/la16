@@ -1,0 +1,32 @@
+/* Find the first 40 prime numbers */
+
+int count;
+int i;
+
+print 2; /* 2 is special case for this code */
+
+i = 3;
+count = 1;
+
+while(count < 40) {
+	int x;
+	int flag;
+	
+	x = (i/2)+1; 
+	
+	flag = 1;
+	while(flag) {
+		
+		if((i/x)*x == i) flag = 0;
+		else x = x - 1;
+	}
+	
+	if(x == 1) {
+		/* i is prime */
+		print i;
+		
+		count = count + 1;
+	}
+	
+	i = i + 1;
+}

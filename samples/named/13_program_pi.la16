@@ -1,0 +1,36 @@
+/* Calculate pi by summing area of circle */
+
+int d;
+int count;
+int x;
+int y;
+int nexty;
+
+d = 4000;
+count = 0;
+
+/* loop all points from (0,0) to (d,d), a lot of points
+   are skiped only 0.025% of points are checked */
+
+nexty = d;
+
+x = 0;
+while(x < d) {
+	
+	y = nexty;
+	while(y > 0) {
+		
+		/* check if inside the circle d */
+		if(x*x + y*y < d*d) {
+			count = count + y;
+			nexty = y;
+			y = 0;
+		}
+		
+		y = y - 1;
+	}	
+	x = x + 1;
+}
+
+/* multiplied by 4 and 1000000 to create pi*1000000 */
+print (4*count)/((d*d)/1000000);
