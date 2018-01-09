@@ -1,0 +1,14 @@
+/* Calculation of the factorial of 7 (=5040) */
+
+int i;
+int x;
+
+i = 7;
+x = 1; /* the value */
+
+while(i>1) {
+	x = x * i;
+	i = i - 1;
+}
+
+print x;

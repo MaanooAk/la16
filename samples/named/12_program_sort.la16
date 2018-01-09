@@ -1,0 +1,50 @@
+/* Selection sort */
+
+int p[6];
+int start;
+int i;
+
+/* the array to be sorted */
+
+p[0] = 7;
+p[1] = 4;
+p[2] = 88;
+p[3] = 5;
+p[4] = 27;
+p[5] = 44;
+
+/* sort the array */
+
+start = 0;
+while(start < 5) {	
+	int min;
+	int minindex;
+	
+	min = p[start];
+	minindex = start;
+	
+	i = start + 1;	
+	while(i < 6) {
+		
+		if(p[i] < min){
+			min = p[i];
+			minindex = i;
+		}
+		
+		i = i + 1;
+	}
+	
+	/* swap */
+	p[minindex] = p[start];
+	p[start] = min;
+	
+	start = start + 1; 
+}
+
+/* print the sorted array */
+
+i = 0;
+while(i <= 5) {
+	print p[i];
+	i = i + 1;
+}
