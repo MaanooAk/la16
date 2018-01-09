@@ -1,0 +1,16 @@
+
+/*
+
+lines of commens are considered
+
+
+*/
+;;;;
+
+if(0);
+if(1);
+while(0);
+while(1);
+
+
+while(1-1);
