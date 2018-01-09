@@ -1,0 +1,56 @@
+/*
+	All check
+*/
+
+int fib[12];
+int i;
+
+fib[0] = 0;
+fib[1] = 1;
+
+fib[1] = fib[1];
+i=1;
+fib[i] = fib[i];
+
+/*
+fab[2]	 = /*019u*321**8/a;
+*/
+
+{}
+i = 0;
+i = 21;
+i = 5000;
+i = 1000333000;
+{}
+i = i + 0;
+i = i + 21;
+i = i + 5000;
+i = i + 1000333000;
+{}
+
+i=1;
+i=2*i;
+while (i < 12) {
+	fib[i-0] = fib[i-1] + fib[i-2];
+	{}
+	fib[i+10-10+fib[0]] = fib[i-1+fib[0+fib[0+fib[0]]]] + fib[i-2];
+	print fib[i];
+	i = i + 1;
+}
+
+{
+	int x;
+	
+	x = 1;
+	x = 2;
+	x = x+1;
+}
+
+{
+	int x;
+	x = 0;
+	if(1) if(0) x=0; else x=1;
+	if(0) if(0) x=0; else x=0;
+	/* if x = 1 the else goes to the closest if */
+	print x;
+}

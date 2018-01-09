@@ -1,0 +1,34 @@
+int pi;
+int values[40];
+int tmp;
+
+tmp = 1;
+
+{
+	int ia;
+	int ib;
+	int ic;
+	ia = 2;
+	ib = ia+2;
+	ic = 0;
+	ic = (ic+10)*(ia/ib)*(ia/2)*(2/ib);
+	tmp = ia+ib+ic;
+}
+
+{
+	int ta;
+	ta = 4;
+	{
+		int tb;
+		tb = 8;
+		if(1) {
+			ta = tb;
+		}else{
+			print 0;
+		}
+	}
+	print ta;
+	{
+		int tb;
+	}
+}

@@ -1,0 +1,8 @@
+int a;
+int s;
+int d;
+int f;
+a = 1;
+s = d = f = 1;
+print ((a+2*21+f+d)/(4-(2+4)+7))+d; /* result 10 */
+print (((a+2*21+f+d)/(4-(2+4)+7))+d)*(((a+2*21+f+d)/(4-(2+4)+7))+d); /* result 100 */

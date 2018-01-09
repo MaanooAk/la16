@@ -1,0 +1,17 @@
+/* First 10 fibonacci numbers */
+
+int first;
+int second;
+int i;
+int tmp;
+
+first = 0;
+second = 1;
+
+while (i < 10) {
+	i = i + 1;
+	tmp = first + second;
+	print tmp;
+	first = second;
+	second = tmp;
+}
