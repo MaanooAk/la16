@@ -1,0 +1,31 @@
+int a;
+int b;
+
+a = b = 1;
+
+{
+	int b;
+	
+	a = b = 2;
+	
+	{
+		int a;
+		int b;
+		int c;
+		
+		a = b = c = 3;
+		
+		{
+			int a;
+			
+			a = 4;
+			
+			print a; /* 4 */
+		}
+		
+		print a; /* 3 */;
+	}
+}
+
+print a; /* 2 */
+print b; /* 1 */

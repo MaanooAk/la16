@@ -1,0 +1,37 @@
+int a;
+int b;
+
+a = 1;
+
+b = 444; /* separator */
+
+if(a) {
+	a = 2;
+}
+
+b = 444; /* separator */
+
+if(a) {
+	a = 2;
+}else{
+	a = 3;
+}
+
+b = 444; /* separator */
+
+while(a==2) {
+	a = 1;
+}
+
+b = 444; /* separator */
+
+print a;
+
+b = 444; /* separator */
+
+a = 1; b = 0;
+
+/* for closest only one 1 must be printed */
+if(a) if(b) print 0; else print 1; 
+if(b) if(a) print 0; else print 0;
+

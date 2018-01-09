@@ -1,0 +1,19 @@
+int a;
+int b;
+int c;
+
+/* simple operations */
+a = 20;
+b = 24 - a;
+c = 20 / (1+19);
+
+/* complex operations; */
+print ((20*a)+(10+c))*(c-11)*a; /* -82200 */
+print (((20*a)+(10+c))*(c-11)*a)/((2-4)*a/10); /* 20550 */
+
+/* order of operations test */
+/* all must print 81 */
+print 20 * 4 + c;
+print c + 20 * 4;
+print a * b + c;
+print c + a * b;

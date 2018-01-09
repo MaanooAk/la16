@@ -1,0 +1,10 @@
+int a;
+
+a = 1000000100;
+
+a = a*4;
+
+/* overflow error will stop execution so 
+nothing will be printed */
+
+print 1; 

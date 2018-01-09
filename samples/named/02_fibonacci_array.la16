@@ -1,0 +1,14 @@
+/* First 10 fibonacci numbers sining an array */
+
+int fib[12];
+int i;
+
+fib[0] = 0;
+fib[1] = 1;
+
+i=2;
+while (i < 12) {
+	fib[i] = fib[i-1] + fib[i-2];
+	print fib[i];
+	i = i + 1;
+}
