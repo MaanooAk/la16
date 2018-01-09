@@ -18,3 +18,7 @@ Install for debian based:
 ```
 apt install byacc flex
 ```
+
+## License
+
+Under MIT License
